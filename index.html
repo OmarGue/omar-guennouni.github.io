@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Omar Guennouni</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar container">
+      <h1 class="logo">Omar<span> Guennouni</span></h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+<!-- HERO -->
+<section id="hero" class="hero container fade-in">
+  <div class="hero-content">
+    <h2 class="hero-title">Développeur Logiciel & Systèmes Embarqués</h2>
+  <p class="hero-subtitle">
+    Passionné par la technologie, je crée et optimise des solutions en <strong>développement logiciel</strong>, <strong>algorithmes</strong> et <strong>robotique</strong>.
+  </p>
+
+
+    <div class="hero-info">
+      <p><i data-feather="map-pin"></i> Nancy, France</p>
+      <p><i data-feather="linkedin"></i> 
+        <a href="https://www.linkedin.com/in/omar-guennouni-ensemisn/" target="_blank">Mon LinkedIn</a>
+      </p>
+      <p><i data-feather="globe"></i> 2 Langues (Français, Anglais)</p>
+      <p><i data-feather="award"></i> Jeune diplômé de l'ENSEM Nancy</p>
+    </div>
+
+    <p class="hero-mission">
+      Je souhaite perfectionner mes compétences techniques dans une entreprise innovante 
+      et contribuer rapidement à des projets ambitieux et à fort impact.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn-primary">Voir mes projets</a>
+      <a href="files/CV_Omar_SLE25.pdf" class="btn-secondary" download>Télécharger mon CV</a>
+    </div>
+  </div>
+
+  <!--img src="img/hero-img.svg" alt="illustration" class="hero-img"-->
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about container fade-in">
+  <h2>À propos</h2>
+  <p>
+Jeune diplômé de l'<strong>ENSEM Nancy</strong>, spécialité <strong>Systèmes et Logiciels Embarqués</strong> au sein de la filière <strong>ISN</strong> (Ingénierie des Systèmes Numériques).
+Passionné par l’<strong>IoT</strong>, la <strong>programmation parallèle</strong> et la <strong>conception de systèmes complexes</strong>, je souhaite mettre mes compétences en <strong>programmation bas niveau</strong>, <strong>développement d’applications</strong> et <strong>résolution de problèmes techniques</strong> au service de projets innovants.
+  </p>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="skills container fade-in">
+  <h2>Compétences</h2>
+  <div class="skill-grid">
+    <div class="skill-bar" title="C / C++ - 90%">
+      <p>C / C++</p>
+      <div class="bar"><div class="progress" data-width="90%"></div></div>
+    </div>
+    <div class="skill-bar" title="Python - 85%">
+      <p>Python</p>
+      <div class="bar"><div class="progress" data-width="85%"></div></div>
+    </div>
+    <div class="skill-bar" title="Embedded / FreeRTOS - 80%">
+      <p>Embedded / FreeRTOS</p>
+      <div class="bar"><div class="progress" data-width="80%"></div></div>
+    </div>
+    <div class="skill-bar" title="Linux / Réseau - 75%">
+      <p>Linux / Réseau</p>
+      <div class="bar"><div class="progress" data-width="75%"></div></div>
+    </div>
+    <div class="skill-bar" title="Java - 70%">
+      <p>Java</p>
+      <div class="bar"><div class="progress" data-width="70%"></div></div>
+    </div>
+    <div class="skill-bar" title="ROS2 - 65%">
+      <p>ROS2</p>
+      <div class="bar"><div class="progress" data-width="65%"></div></div>
+    </div>
+    <div class="skill-bar" title="Git / Maven - 80%">
+      <p>Git / Maven</p>
+      <div class="bar"><div class="progress" data-width="80%"></div></div>
+    </div>
+    <div class="skill-bar" title="SQL / Base de données - 70%">
+      <p>SQL / Base de données</p>
+      <div class="bar"><div class="progress" data-width="70%"></div></div>
+    </div>
+    <div class="skill-bar" title="MATLAB / Simulink - 65%">
+      <p>MATLAB / Simulink</p>
+      <div class="bar"><div class="progress" data-width="65%"></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience container fade-in">
+  <h2>Expériences Professionnelles</h2>
+
+  <!-- Stage Framatome -->
+  <div class="experience-item">
+    <div class="experience-header">
+      <img src="img/framatome.png" alt="Framatome Logo" class="experience-logo">
+      <div class="experience-title">
+        <h3>Stage - Framatome</h3>
+        <span class="date">Mars 2025 - Août 2025</span>
+      </div>
+      <button class="toggle-details">+</button>
+    </div>
+    <div class="experience-details">
+      <p>Développement d’un préprocesseur mécanique pour modéliser les assemblages de combustible nucléaire.</p>
+      <ul>
+        <li>Conception modulaire des entités mécaniques (matériaux, composants, liaisons)</li>
+        <li>Transformation automatique en éléments finis pour simulation</li>
+        <li>Technologies : Python (POO), JSON, Git, Sphinx pour documentation</li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Stage Attijariwafa Bank -->
+<div class="experience-item">
+  <div class="experience-header">
+    <img src="img/awb_logo.png" alt="AWB Logo" class="experience-logo">
+    <div class="experience-title">
+      <h3>Stage - Attijariwafa Bank</h3>
+      <span class="date">Juin 2023 - Juillet 2023</span>
+    </div>
+    <button class="toggle-details">+</button>
+  </div>
+  <div class="experience-details">
+    <p>Participation au projet ARRCO, application bancaire interne pour la gestion automatisée des arrêtés de compte.</p>
+    <ul>
+      <li>Analyse des besoins fonctionnels et compréhension du processus des arrêtés de compte</li>
+      <li>Collaboration avec le Système d’Information Groupe (SIG) pour le suivi technique</li>
+      <li>Développement d’applications Java avec Gradle pour automatiser les calculs financiers</li>
+      <li>Implémentation de services REST API pour l’accès aux données des comptes</li>
+      <li>Gestion du versioning et du code avec Git</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <!-- Tuteur privé -->
+  <div class="experience-item">
+    <div class="experience-header">
+        <img src="img/LB.png" alt="LB" class="experience-logo">
+      <h3>Tuteur privé</h3>
+      <span class="date">Septembre 2020 - Juin 2021</span>
+      <button class="toggle-details">+</button>
+    </div>
+    <div class="experience-details">
+      <p>Accompagnement d’élèves en Mathématiques et Physique, préparation au bac.</p>
+      <ul>
+        <li>Suivi personnalisé pour améliorer les méthodes de travail</li>
+        <li>Encadrement des révisions et exercices pratiques</li>
+        <li>Technologies : Aucun logiciel spécifique</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects container fade-in">
+  <h2>Projets</h2>
+  <div class="projects-grid">
+
+    <!-- Projet 1 : Contrôle neuromorphique -->
+    <div class="project-card" 
+         data-title="Contrôle neuromorphique"
+         data-desc="Conception d’un contrôleur inspiré des réseaux de neurones biologiques pour stabiliser un pendule inversé. Développement d’algorithmes adaptatifs et simulations réalisées avec Python et Matlab/Simulink pour analyser la stabilité et la robustesse du système. 
+                    Un rapport pdf du projet est disponible en Démo."
+         data-img="img/neurons.png" 
+         data-github="https://github.com/OmarGue/neuromorphic-pendulum" 
+         data-demo="files/PRDA_OG (2).pdf">
+      <img src="img/neurons.png" alt="Contrôle neuromorphique">
+      <div class="project-info">
+        <h3>Contrôle neuromorphique</h3>
+        <span class="tags">Python • Matlab/Simulink • Contrôle adaptatif • Systèmes non linéaires</span>
+      </div>
+    </div>
+
+    <!-- Projet 2 : Simulation de vol multi-drones -->
+    <div class="project-card" 
+         data-title="Simulation de vol multi-drones" 
+         data-desc="Simulateur multi-drones en C sous Linux. Chaque drone suit des instructions depuis un fichier texte (position, orientation, mouvements) et évite obstacles et collisions. Modes simulation locale et distribuée (serveur + clients). Démo vidéo incluse." 
+         data-img="img/drone-sim.png" 
+         data-github="https://github.com/OmarGue/drone-sim" 
+         data-demo="img/drone-demo.mp4">
+      <img src="img/drone-sim.png" alt="Simulation de vol multi-drones">
+      <div class="project-info">
+        <h3>Simulation de vol multi-drones</h3>
+        <span class="tags">C • Linux • Réseau • Concurrence</span>
+      </div>
+    </div>
+
+    <!-- Projet 3 : UrbanLoop -->
+  <div class="project-card" 
+      data-title="UrbanLoop – Capsule autonome" 
+      data-desc="UrbanLoop est un projet existant de capsules autonomes développé à Nancy. Notre bureau d’étude a travaillé sur une preuve de concept pour une mini-capsule, en se concentrant sur deux aspects : la détection d’obstacles via un ensemble de capteurs (LIDAR, caméras stéréo, IMU, GPS, ultrasons) connectés à une NVIDIA Jetson Orin AGX, et le pilotage via deux ESP32 communiquant en IrDA. La capsule adapte sa vitesse en fonction de la détection, avec tests réalisés sur banc moteur et LEDs. Technologies : ROS2, OpenCV, MQTT, ESP32, Python, C/C++." 
+      data-img="img/urbanloop.jpg" 
+      data-github="">
+    <img src="img/urbanloop.png" alt="Projet UrbanLoop – Capsule autonome">
+    <div class="project-info">
+      <h3>UrbanLoop – Capsule autonome</h3>
+      <span class="tags">ROS2 • OpenCV • ESP32 • MQTT • Python • C/C++</span>
+    </div>
+  </div>
+
+  <!-- Projet 4 : SAMI et ses outils -->
+  <div class="project-card" 
+      data-title="Robot autonome LEGO EV3" 
+      data-desc="Projet pluridisciplinaire (automatique, mathématiques, informatique) visant à rendre un robot LEGO EV3 autonome. 
+  La problématique traitée : comment relier plusieurs points en minimisant la distance parcourue (problème du voyageur de commerce). 
+  La partie mathématiques a implémenté un algorithme d’enveloppe convexe et d’insertion (Graham Scan) pour optimiser le parcours. 
+  La partie automatique a développé les lois de commande (vitesse, orientation) et modélisé le robot sous Matlab/Simulink. 
+  La partie informatique a intégré l’ensemble : lecture des points depuis un fichier, récupération de la position en temps réel via caméra, régulation du robot, et interface graphique affichant le parcours réel vs optimum. 
+  Technos : LEGO EV3, Matlab/Simulink, Python, Algorithmes TSP, Interface graphique.
+  Démo vidéo incluse." 
+      data-img="img/sami-robot.png" 
+      data-github="" 
+      data-demo="img/sami-robot.mp4">
+    <img src="img/sami-robot.png" alt="Projet SAMI – Robot autonome LEGO EV3">
+    <div class="project-info">
+      <h3>Robot autonome LEGO EV3</h3>
+      <span class="tags">LEGO EV3 • Matlab/Simulink • Python • Algorithmes • Interface graphique</span>
+    </div>
+  </div>
+
+    <!-- Projet 5 : Jeu Labyrinthe Java -->
+  <div class="project-card" 
+      data-title="Jeu d’aventure Java – Labyrinthe & Monstres" 
+      data-desc="Développement d’un jeu 2D en Java où le joueur explore un labyrinthe, affronte des monstres et doit s’échapper. Le jeu intègre une barre de vie, des collisions, et une logique d’ennemis. Organisation du projet avec Maven et Sprint Planning. Qualité du code assurée par des tests unitaires (JUnit) et gestion de version avec Git." 
+      data-img="img/labyrinthe.png" 
+      data-github="https://github.com/OmarGue/MazeGame">
+    <img src="img/maze-game.png" alt="Jeu Labyrinthe Java">
+    <div class="project-info">
+      <h3>Jeu Labyrinthe – Aventure en Java</h3>
+      <span class="tags">Java • JUnit • Maven • Sprint • Git</span>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact container fade-in">
+  <h2>Contactez-moi</h2>
+  <p class="contact-intro">Intéressé par mon profil ? N'hésitez pas à m'envoyer un message :</p>
+
+  <form id="contact-form" class="contact-form">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Votre nom" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Votre email" required>
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Votre message..." required></textarea>
+    </div>
+    <button type="submit" class="btn-primary">Envoyer</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://linkedin.com/in/omar-guennouni" target="_blank" class="social-link">
+      <i data-feather="linkedin"></i>
+    </a>
+    <a href="https://github.com/omar-guennouni" target="_blank" class="social-link">
+      <i data-feather="github"></i>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Omar Guennouni | Développé avec ❤️</p>
+</footer>
+
+
+  <!-- MODAL PROJETS -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-links">
+        <a id="modalGithub" href="#" target="_blank" class="btn-secondary">Code</a>
+        <a id="modalDemo" href="#" target="_blank" class="btn-primary">Démo</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
