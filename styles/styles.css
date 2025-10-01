@@ -226,43 +226,93 @@ body {
   font-weight: bold;
 }
 
+
+/* STYLE UNIFORME POUR TOUS LES TITRES DE SECTION */
+section h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Assurez-vous que toutes les sections aient le même alignement */
+.about h2,
+.skills h2,
+.experience h2,
+.projects h2,
+.contact h2 {
+  text-align: left;
+  width: 100%;
+}
+
 /* SKILLS */
-.skills {
-  margin: 2rem 0;
-  /* text-align: left; */ /* supprime cette ligne */
+/* SKILLS - CORRECTION COMPLÈTE */
+.skills.container {
+  text-align: left;
+}
+
+.skills h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  width: 100%;
 }
 
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  justify-items: center; /* centre chaque barre horizontalement */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  /* SUPPRIMEZ margin: 0 auto */
+  max-width: 100%;
 }
 
 .skill-bar {
-  max-width: 250px; /* largeur max pour chaque barre */
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.skill-bar p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1rem;
+  text-align: left;
 }
 
 .bar {
   width: 100%;
-  height: 10px;
-  background-color: var(--bar-bg, #e0e0e0);
-  border-radius: 5px;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
   overflow: hidden;
-}
-.skill-bar {
-  width: 100%; /* ou max-width */
-  margin: 0 auto; /* centre dans la grille */
 }
 
 .progress {
-  width: 0;
   height: 100%;
-  background: linear-gradient(90deg, var(--primary-color, #4caf50), var(--secondary-color, #2196f3));
-  border-radius: 5px;
+  background: linear-gradient(135deg, #6d28d9, #3b82f6);
+  border-radius: 6px;
+  width: 0;
   transition: width 1.2s ease-in-out;
+}
+
+/* Mode sombre */
+body.dark .bar {
+  background-color: #374151;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 10px;
+  }
+  
+  .skills h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* CONTACT */

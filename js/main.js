@@ -44,13 +44,6 @@ projectCards.forEach(card => {
 closeModal.addEventListener('click', () => modal.style.display = 'none');
 window.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
 
-// Formulaire
-document.getElementById('contact-form').addEventListener('submit', e => {
-  e.preventDefault();
-  alert("Merci pour votre message !");
-  e.target.reset();
-});
-
 // Animation scroll
 const fadeElements = document.querySelectorAll('.fade-in');
 function checkVisibility() {
@@ -85,3 +78,24 @@ document.querySelectorAll('.toggle-details').forEach(button => {
     button.textContent = details.style.display === 'block' ? '−' : '+';
   });
 });
+
+// Initialise EmailJS
+emailjs.init("a8NxwS2i4RqYZc0rv"); // remplace par ton vrai public key
+
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(event){
+  event.preventDefault(); // empêche le rechargement
+
+  emailjs.sendForm('service_ehu42pn', 'template_a843tzh', this)
+    .then(() => {
+      alert("Message envoyé avec succès !");
+      form.reset(); // vide le formulaire
+    })
+    .catch((err) => {
+      console.error("Erreur:", err);
+      alert("Erreur lors de l'envoi du message.");
+    });
+});
+
+
